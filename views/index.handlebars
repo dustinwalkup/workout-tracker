@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Workout Tracker</h1>
+        <form id="input-form">
+            <div class="form-group">
+                <fieldset>
+                    <section class="input form-group row">
+                        {{!-- <label id="name-label" for="name">Name of Exercise</label> --}}
+                        <input class="form-control form-control-sm form-text" id="name" type="text" name="name"
+                            placeholder="Exercise">
+                    </section>
+                    <section class="input form-group row">
+                        {{!-- <label id="reps-label" for="reps">Number of Reps</label> --}}
+                        <input class="form-control form-control-sm form-number" id="reps" type="number" name="reps"
+                            placeholder="Reps">
+                    </section>
+                    <section id="weight-section" class="input form-group row">
+                        {{!-- <label id="weight-label" for="Weight">Weight Amount</label> --}}
+                        <input class="form-control form-control-sm form-number" id="weight" type="number" name="weight"
+                            placeholder="Weight">
+
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-primary active">
+                                <input type="radio" name="lbs" id="lbs" value="1" autocomplete="off" checked> lbs
+                            </label>
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="lbs" value="0" autocomplete="off"> kgs
+                            </label>
+                        </div>
+                    </section>
+                    <section class="input">
+                        <label for="date">Date:</label>
+                        <input id="date" type="date" name="date">
+                    </section>
+                    <input type="submit" class="btn btn-outline-primary" onclick="" value="Add New Workout" id="addNew"
+                        name="">
+                    <br>
+                    <input type="submit" class="btn btn-outline-primary" onclick="" value="Reset Table" id="reset"
+                        name="">
+                </fieldset>
+            </div>
+        </form>
+        <br>
+        <span class="table table-hover" id="table"></span>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

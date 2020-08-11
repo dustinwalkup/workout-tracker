@@ -1,0 +1,46 @@
+fieldset, h1{
+	text-align: center;
+}
+
+#input-form {
+	margin-top: 10px;
+ 	padding: 5px;
+ 	width: 450px;
+ 	margin:auto;
+ }
+.form-text{
+
+	max-width: 200px;
+	margin:auto;
+}
+
+#newWeight, #newReps {
+	max-width:80px;
+}
+.form-number{
+	max-width: 80px;
+}
+table {
+	margin:auto;
+}
+  .input {
+ 	text-align: center; 
+	padding: 8px 8px 8px 8px; 
+ 
+ } 
+ 
+ #weight-section {
+	margin:auto;
+} 
+#reps{
+	margin-left: 128px;
+}
+#weight {
+	margin-right:20px;
+	margin-left: 113px;
+}
+
+#reset {
+	margin-top:10px;
+	margin-bottom: -30px;
+}
